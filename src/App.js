@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="body">
       <Header />
- 
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/About" element={<About />} /> 

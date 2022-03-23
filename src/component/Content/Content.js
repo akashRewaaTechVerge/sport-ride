@@ -1,12 +1,41 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState,Component} from 'react';
+ 
 import './Content.css'
 import CityImage from "../images/city-image.jpg"
-import { NavLink  , Link} from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
+import scooter from '../images/scooter.jpg'
+import scooter2 from '../images/scooter2.png'
+import cycle from '../images/cycle.png'
+import ectricscooter from '../images/ectricscooter.png'
+import HorizontalScroll from 'react-scroll-horizontal'
 
 
 function Content() {
-    const [click, setClick] = React.useState(false);
+
+    const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
+
+    const [position, setPosition] = useState('70')
+
+    function moveCircle() {  
+        const speed = 60
+        const scrolltop = window.pageYOffset
+        const scrollAndSpeed = scrolltop / speed
+    
+        console.log(scrollAndSpeed.toString())
+        setPosition(scrollAndSpeed.toString())
+      }
+      useEffect(() => {
+        window.addEventListener(
+          'scroll',
+          function () {
+            requestAnimationFrame(moveCircle)
+          },
+          false
+        )
+      }, [])
+ 
+
     return (
         <div>
             <div id="" class="site-content">
@@ -14,8 +43,17 @@ function Content() {
                     <main id="main" class="site-main" role="main" >
                         <div class="home-hero-section-wrapper embed-container">
                             <img style={{ paddingTop: '10rem' }} src={CityImage} />
-
+                            
                         </div>
+                        <div className="sectionOne">
+                            <div className="circle styles"
+                                style={{ position: 'absolute', left: `${position}rem` , marginTop:"-15%"}}>
+                                    <img className='bannerImg scooter' src={scooter2} style={{width:"18%" ,     MARGINLEFT: "10%"}} />
+                                    <img className='bannerImg cycle' src={cycle} style={{width:"18%" , marginLeft: "14%"}} />
+                                    <img className='bannerImg ectric' src={ectricscooter} style={{width:"12%" , marginLeft: "14%"}} />
+                            </div>
+                        </div>
+                        <div className="sectionTwo"></div>
                         <div class="stores-buttons-wrapper hero-buttons-side-fixed" style={{ opacity: '0', visibility: 'hidden' }}>
                             <div class="stores-buttons-inner">
                                 <div class="container">
@@ -23,6 +61,7 @@ function Content() {
                                         <div class="store-buttons-wrap col-lg-6">
                                             <div class="store-buttons-wrap-inner">
                                                 <div class="row">
+
                                                     <div class="image-store-item col-6">
                                                         <div class="image-inner">
                                                             <a href="https://app.adjust.com/ctz2bar?engagement_type=fallback_click&amp;redirect=https%3A%2F%2Fitunes.apple.com%2Fapp%2Fid1250107307%3Fmt%3D8"><img src="https://cdn.felyx.com/uploads/2021/09/B-APPLE.svg" alt="" class="lazyloaded" data-ll-status="loaded" /><noscript><img src="https://cdn.felyx.com/uploads/2021/09/B-APPLE.svg" alt="" /></noscript></a>
@@ -40,6 +79,11 @@ function Content() {
                                 </div>
                             </div>
                         </div>
+
+                          {/* <HorizontalScroll>  */}
+                        {/* <img style={{ paddingTop: '10rem' }} src={scooter} /> */}
+                        {/* <div style={child} /> */}
+                        {/* </HorizontalScroll> */}
                         <div class="simple-text-box-section-wrapper   content-main-wrapper" style={{ backgroundColor: '#ffffff' }}>
                             <div class="container simple-text-box-container">
                                 <div class="row simple-text-box-row">
@@ -140,7 +184,7 @@ function Content() {
                                             </div>
                                             <div class="read-more-button">
                                                 <Link to='/About' className="nav-link">Read More</Link>
-                                                 {/* <Link to={'/About'} activeClassName="active" 
+                                                {/* <Link to={'/About'} activeClassName="active" 
                                                 className="nav-links" >
                                                 Read More
                                             </Link> */}
@@ -289,7 +333,7 @@ function Content() {
                         <div class="simple-text-box-section-wrapper   content-main-wrapper">
                             <div class="container simple-text-box-container">
                                 <div class="row simple-text-box-row">
-
+                                    <i class="fa-solid fa-face-mask"></i>
                                     <div class="main-simple-text-box-content col-lg-12">
                                         <div class="main-simple-text-box-content-inner main-content-inner-parent slide-for-more-parent ">
                                             <div class="content simple-text-box-content">
