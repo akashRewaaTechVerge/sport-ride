@@ -1575,7 +1575,8 @@ embed, iframe, object {
   /* top: 38; */
   width: 100%;
   z-index: 99999;
-  background-color: rgb(3, 61, 25);
+  /* background-color: rgb(3, 61, 25); */
+  background-color: transparent;
   -webkit-transition: background-color .3s ease-out, -webkit-transform .3s ease-out;
   transition: background-color .3s ease-out, -webkit-transform .3s ease-out;
   transition: transform .3s ease-out, background-color .3s ease-out;
@@ -23592,7 +23593,7 @@ embed, iframe, object {
   /* top: 20px; */
   width: 100%;
   z-index: 99999;
-  background-color: #558381;
+  background-color: transparent;
   -webkit-transition: background-color .3s ease-out, -webkit-transform .3s ease-out;
   transition: background-color .3s ease-out, -webkit-transform .3s ease-out;
   transition: transform .3s ease-out, background-color .3s ease-out;
@@ -24036,8 +24037,9 @@ embed, iframe, object {
 
 .main-navigation a {
   border-radius: 30px;
+  background-color: #fff;
   display: block;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   padding: 6px 10px;
   font-size: 18px;
@@ -44049,4 +44051,7 @@ body:not(.home) .year-video__banner.home-hero-section-wrapper {
   /* padding-right: calc(var(--bs-gutter-x) * .5);
   padding-left: calc(var(--bs-gutter-x) * .5);
   margin-top: var(--bs-gutter-y); */
+}
+a.active {
+  color: #10cd53;
 }

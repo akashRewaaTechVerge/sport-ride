@@ -1,0 +1,65 @@
+.container-discover {
+    display: flex;
+    flex-direction: column;
+}
+.container-logo-white img {
+    width: 50%;
+}
+.container-logo-black img {
+    width: 11%;
+}
+img.bannerImg.scooter {
+    left: 13%;
+}
+
+.circle.styles {
+    margin-left: 29%;
+    width: 140px;
+    margin-top: -150%;
+}
+
+/* For Map Image */
+img.mainMapImage {
+    width: 100%;
+}
+
+.postionCahnge {
+    position: relative;
+    top: 200px;
+    /* margin-left: 100%;
+    transition: transform 5s;
+    transform: rotate(270deg);
+    transition-delay: 2s;
+    animation: mymove 5s; */
+}  
+.postion400 {
+    position: relative;
+    top: 450px;
+
+}  
+
+.postion900{
+    position: relative;
+    top: 910px;
+    margin-left: 200%;
+}
+
+.postionCahnge:hover {
+    margin-left: 100%;
+    transition-duration: 4ms;
+}
+
+img.bannerImg.scooter {
+    position: relative;
+    animation: mymove 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mymove {
+    from {top: 1px;} 
+    to {top: 525px}
+}  
+
+img.bannerImg.scooter:hover {
+    animation: step-end;
+}

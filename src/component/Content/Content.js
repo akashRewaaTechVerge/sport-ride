@@ -5,8 +5,8 @@ import CityImage from "../images/city-image.jpg"
 import { NavLink, Link } from 'react-router-dom';
 import scooter from '../images/scooter.jpg'
 import scooter2 from '../images/scooter2.png'
-import cycle from '../images/cycle.png'
-import ectricscooter from '../images/ectricscooter.png'
+import cycle from '../images/cycleimg.png'
+import ectricscooter from '../images/electsc.png'
 import HorizontalScroll from 'react-scroll-horizontal'
 
 
@@ -25,15 +25,7 @@ function Content() {
         console.log(scrollAndSpeed.toString())
         setPosition(scrollAndSpeed.toString())
       }
-      useEffect(() => {
-        window.addEventListener(
-          'scroll',
-          function () {
-            requestAnimationFrame(moveCircle)
-          },
-          false
-        )
-      }, [])
+     
  
 
     return (
@@ -43,16 +35,13 @@ function Content() {
                     <main id="main" class="site-main" role="main" >
                         <div class="home-hero-section-wrapper embed-container">
                             <img style={{ paddingTop: '10rem' }} src={CityImage} />
-                            
                         </div>
-                        <div className="sectionOne">
+                        {/* <div className="sectionOne">
                             <div className="circle styles"
                                 style={{ position: 'absolute', left: `${position}rem` , marginTop:"-15%"}}>
-                                    <img className='bannerImg scooter' src={scooter2} style={{width:"18%" ,     MARGINLEFT: "10%"}} />
-                                    <img className='bannerImg cycle' src={cycle} style={{width:"18%" , marginLeft: "14%"}} />
-                                    <img className='bannerImg ectric' src={ectricscooter} style={{width:"12%" , marginLeft: "14%"}} />
+                                <img className='bannerImg scooter' src={scooter2} style={{width:"13%" ,     MARGINLEFT: "10%"}} />
                             </div>
-                        </div>
+                        </div> */}
                         <div className="sectionTwo"></div>
                         <div class="stores-buttons-wrapper hero-buttons-side-fixed" style={{ opacity: '0', visibility: 'hidden' }}>
                             <div class="stores-buttons-inner">
@@ -79,8 +68,7 @@ function Content() {
                                 </div>
                             </div>
                         </div>
-
-                          {/* <HorizontalScroll>  */}
+                        {/* <HorizontalScroll>  */}
                         {/* <img style={{ paddingTop: '10rem' }} src={scooter} /> */}
                         {/* <div style={child} /> */}
                         {/* </HorizontalScroll> */}
@@ -101,7 +89,6 @@ function Content() {
                                     </div>
                                     <div class="image-content-wrappper col-sm-6">
                                     </div>
-
                                 </div>
                             </div>
                         </div>

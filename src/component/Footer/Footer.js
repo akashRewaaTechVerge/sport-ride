@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logo.svg"
+import logo from "../images/spot-ride-logo-mains.png"
 
 function Footer() {
     return (
@@ -28,7 +28,7 @@ function Footer() {
                                 <aside id="text-2" class="widget widget_text">
                                     <div class="footer-logo-wrap">
                                         <a href="en/index.html" rel="home">
-                                            <img src={logo} />
+                                            <img src={logo} style={{width:"16%"}} />
                                         </a>
                                     </div>
                                 </aside>

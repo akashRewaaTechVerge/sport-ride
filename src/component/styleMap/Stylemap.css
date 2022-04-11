@@ -1,0 +1,84 @@
+
+/* Popup style */
+.popup-box {
+    position: fixed;
+    background: cadetblue;
+    width: 142%;
+    top: -8%;
+    left: -21%;
+}
+
+/* For Open Box */
+.box {
+    position: relative;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+    overflow: auto;
+    height: 85%;
+    margin-left: 1%;
+    margin-top: 8%;
+}
+
+ /* FOR CLOSE ICONE  */
+.close-icon {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(5% - 20px);
+    top: calc(72vh - 45vh - 4px);
+    background: #ededed;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #999;
+    font-size: 20px;
+}
+
+/* For Animated Model popup */
+.animate__animated.animate__bounce {
+  --animate-duration: 4s;
+}
+
+/* For Animated Model ZoomIn */
+.animate__zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  width: 100%;
+  margin-left: 21%;
+  height: 108%;
+} 
+
+/* For 2nd model Popup  */
+.popup-box1  {
+    position: fixed;
+    background: transparent;
+    width: 50%;
+    height: 100vh;
+    top: 16%;
+    margin-left: -5%;
+}
+
+/* For 2nd model Popup  */
+.box1 {
+    position: relative;
+    width: 71%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    /* transform: scale(0.1, 0.1); */
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+ 

@@ -1,0 +1,41 @@
+.close-icons {
+    content: 'x';
+    cursor: pointer;
+    position: fixed;
+    right: calc(15% - 30px);
+    top: calc(102vh - 74vh - 2px);
+    background: #ededed;
+    width: 24px;
+    height: 25px;
+    border-radius: 50%;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #d31a1a;
+    font-size: 20px;
+    margin-right: 50%;
+}
+
+/* Popup style */
+.popup-box1:hover {
+    position: fixed;
+    background: transparent;
+    width: 60%;
+    height: 100vh;
+    top: 3%;
+    left: 30%;
+    opacity: 1
+}
+.box1:hover{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    height: auto;
+    max-height: 70vh;
+    margin-top: calc(100vh - 85vh - 20px);
+    background: #ebebeb;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #d31a1a;;
+    overflow: auto;
+    opacity: 1
+}
