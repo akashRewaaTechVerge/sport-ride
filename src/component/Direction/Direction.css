@@ -1,0 +1,14 @@
+.w3-badge, .w3-tag {
+    /* background-color: rgb(171, 27, 27); */
+    color: #fff;
+    display: block;
+    animation: animUp 7s;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 0px;
+    animation-delay: 8s;
+    margin-top: 28%;
+    animation-fill-mode: forwards;
+    margin-top: 50%;
+}

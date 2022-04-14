@@ -11,10 +11,6 @@ import { Main } from "./component";
 import Map from "./component/Map/Map"
 // import Stylemap from "./component/styleMap/Stylemap"
 
-
-
-
-
 function App() {
   return (
     <div className="body">

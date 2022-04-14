@@ -2,20 +2,24 @@
     display: flex;
     flex-direction: column;
 }
+
 .container-logo-white img {
     width: 50%;
 }
+
 .container-logo-black img {
     width: 11%;
 }
+
 img.bannerImg.scooter {
     left: 13%;
 }
 
 .circle.styles {
-    margin-left: 29%;
+    margin-left: 86%;
     width: 140px;
     margin-top: -150%;
+    padding-top: 18px;
 }
 
 /* For Map Image */
@@ -24,42 +28,124 @@ img.mainMapImage {
 }
 
 .postionCahnge {
-    position: relative;
+    /* position: relative; */
     top: 200px;
-    /* margin-left: 100%;
-    transition: transform 5s;
-    transform: rotate(270deg);
+     margin-left: 100%;
+    /* transition: transform 5s; */
+    /* transform: rotate(270deg); */
     transition-delay: 2s;
-    animation: mymove 5s; */
-}  
-.postion400 {
-    position: relative;
-    top: 450px;
-
-}  
-
-.postion900{
-    position: relative;
-    top: 910px;
-    margin-left: 200%;
+    animation: mymove 5s; 
 }
 
-.postionCahnge:hover {
-    margin-left: 100%;
-    transition-duration: 4ms;
-}
-
-img.bannerImg.scooter {
+img.bannerImg {
     position: relative;
-    animation: mymove 8s;
+    animation: move 7s;
+    animation-fill-mode: forwards;
+ }
+
+@keyframes move {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 550px;
+    }
+}
+.w3-badge, .w3-tag {
+    /* background-color: rgb(171, 27, 27); */
+    color: #ff8e8e;
+    display: block;
+    animation: animUp 0s;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 0px;
+    animation-delay: 8s;
+    /* margin-top: 100%; */
+    animation-fill-mode: forwards;
+}
+@keyframes animUp {
+    100% {display: none;
+        font-size: 18px;
+        margin-top: 250%;
+        border-right: .5px solid rgb(243, 0, 0);
+        background-color: black;
+        border-radius: 5px;
+            border: 2px solid gray;
+    }
+}   
+
+/* For Scroll 1nd */
+
+img.bannerImg1 {
+    position: relative;
+    animation: moves 7s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes moves {
+    from {
+        top: 60px;
+    }
+    to {
+        top: 600px;
+    }
+}  
+span.w3-text.w3-tag.scroll1{
+    color: #ff8e8e;
+    display: block;
+    animation: animUps 0s;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 0px;
+    animation-delay: 8s;
+    /* margin-top: 100%; */
     animation-fill-mode: forwards;
 }
 
-@keyframes mymove {
-    from {top: 1px;} 
-    to {top: 525px}
-}  
+@keyframes animUps {
+    100% {display: none;
+        font-size: 18px;
+        margin-top: 350%;
+        background-color: rgb(30, 109, 45);
+   }
+} 
 
-img.bannerImg.scooter:hover {
-    animation: step-end;
+
+/* For Scroll 2nd */
+
+img.bannerImg2 {
+    position: relative;
+    animation: movee 7s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes movee {
+    from {
+        top: 110px;
+    }
+    to {
+        top: 700px;
+    }
+}  
+span.w3-text.w3-tag.scroll2{
+    color: #ff8e8e;
+    display: block;
+    animation: animUpp 0s;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size: 0px;
+    animation-delay: 8s;
+    /* margin-top: 100%; */
+    animation-fill-mode: forwards;
 }
+
+@keyframes animUpp {
+    100% {display: none;
+        font-size: 18px;
+        margin-top: 400%;
+        background-color: rgb(239, 14, 14);
+   }
+} 
